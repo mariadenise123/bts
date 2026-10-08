@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BTS: O Fenómeno Global</title>
   <style>
-    /* Estilos CSS Incorporados Directamente */
     :root {
       --purple-primary: #5c328b;
       --purple-light: #9d71db;
@@ -13,7 +12,6 @@
       --bg-color: #f7f5fa;
       --card-bg: #ffffff;
       --text-color: #2c2c2c;
-      --text-muted: #666666;
     }
 
     * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -22,7 +20,7 @@
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background-color: var(--bg-color);
       color: var(--text-color);
-      line-height: 1.7;
+      line-height: 1.6;
     }
 
     header {
@@ -30,7 +28,6 @@
       color: white;
       padding: 2rem 1rem 1rem 1rem;
       text-align: center;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
     }
 
     header h1 { font-size: 2.2rem; }
@@ -54,7 +51,6 @@
       color: #ffffff;
       text-decoration: none;
       font-weight: 600;
-      transition: color 0.3s ease;
     }
 
     nav a:hover { color: #ffd700; }
@@ -83,28 +79,6 @@
       margin-bottom: 1rem;
     }
 
-    .imagem-destaque img {
-      width: 100%;
-      border-radius: 8px;
-      margin-top: 1rem;
-    }
-
-    figcaption {
-      font-size: 0.85rem;
-      color: var(--text-muted);
-      text-align: center;
-      margin-top: 0.4rem;
-    }
-
-    blockquote {
-      border-left: 4px solid var(--purple-primary);
-      background: #f1e9f9;
-      padding: 1rem;
-      margin: 1.2rem 0;
-      font-style: italic;
-      border-radius: 0 8px 8px 0;
-    }
-
     .membros-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -118,11 +92,6 @@
       border-radius: 8px;
       padding: 1rem;
       text-align: center;
-      transition: transform 0.3s ease;
-    }
-
-    .card-membro:hover {
-      transform: translateY(-5px);
     }
 
     .card-membro img {
@@ -143,8 +112,6 @@
       margin-bottom: 1.5rem;
       box-shadow: 0 3px 10px rgba(0,0,0,0.05);
     }
-
-    aside img { width: 100%; border-radius: 6px; margin-bottom: 0.6rem; }
 
     footer {
       background-color: var(--purple-dark);
@@ -179,16 +146,7 @@
     <article>
       <section id="biografia">
         <h2>1. História e Biografia</h2>
-        <p>O <strong>BTS</strong> (<em>Bangtan Sonyeondan</em>) é um grupo sul-coreano composto por sete integrantes formado em 2013. Tornaram-se num dos maiores fenómenos da música mundial, batendo recordes de vendas e audiência em todo o globo.</p>
-        
-        <figure class="imagem-destaque">
-          <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=800" alt="Palco de concerto com luzes roxas">
-          <figcaption>BTS ao vivo em concerto mundial.</figcaption>
-        </figure>
-
-        <blockquote>
-          "Se não consegues voar, corre. Se não consegues correr, anda. Se não consegues andar, rasteja. Mas de qualquer forma, segue em frente." — BTS
-        </blockquote>
+        <p>O <strong>BTS</strong> (<em>Bangtan Sonyeondan</em>) é um grupo sul-coreano composto por sete integrantes formado em 2013. Tornaram-se num dos maiores fenómenos da música mundial.</p>
       </section>
 
       <section id="membros">
@@ -249,35 +207,25 @@
 
       <section id="conquistas">
         <h2>3. Principais Conquistas</h2>
-        <ul>
-          <li>Primeiro grupo de K-Pop no topo do Billboard Hot 100.</li>
-          <li>Nomeações para os Grammy Awards.</li>
-          <li>Estádios esgotados no mundo inteiro (Wembley, Rose Bowl).</li>
-        </ul>
+        <p>Primeiro grupo de K-Pop no topo do Billboard Hot 100 e nomeado para os Grammy Awards.</p>
       </section>
 
       <section id="impacto">
         <h2>4. Impacto Social</h2>
-        <p>Em parceria com a UNICEF, criaram a campanha mundial <em>#LOVE_YOURSELF</em> contra a violência em jovens e discursaram três vezes na Assembleia Geral da ONU em Nova Iorque.</p>
+        <p>Em parceria com a UNICEF, criaram a campanha mundial <em>#LOVE_YOURSELF</em>.</p>
       </section>
-
     </article>
 
     <aside>
       <div class="widget">
         <h3>O Fandom: ARMY</h3>
-        <p>A comunidade global de fãs é reconhecida pela sua união em causas de caridade e apoio constante ao grupo.</p>
-      </div>
-
-      <div class="widget">
-        <h3>Símbolo: "Borahae"</h3>
-        <p>Criado por V, a frase "I Purple You" tornou a cor roxa o símbolo oficial do amor entre o BTS e os seus fãs.</p>
+        <p>A comunidade global de fãs é reconhecida pela sua união e apoio constante.</p>
       </div>
     </aside>
   </main>
 
   <footer>
-    <p>&copy; 2026 - Página Informativa BTS. Distribuído sob a Licença MIT.</p>
+    <p>&copy; 2026 - Página Informativa BTS. Licença MIT.</p>
   </footer>
 
 </body>
