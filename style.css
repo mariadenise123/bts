@@ -1,536 +1,127 @@
-/* =========================================
-   CONFIGURAÇÕES GERAIS
-========================================= */
-
+/* Reset e Variáveis Globais */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-html {
-    scroll-behavior: smooth;
+:root {
+  --primary-color: #5d3b8e; /* Roxo característico do BTS */
+  --secondary-color: #9b51e0;
+  --bg-color: #f8f6fc;
+  --text-color: #2b2b2b;
+  --card-bg: #ffffff;
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.7;
-    color: #292331;
-    background-color: #f7f4fa;
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--bg-color);
 }
 
-
-/* =========================================
-   CABEÇALHO
-========================================= */
-
+/* Header e Menu com Flexbox */
 header {
-    background: linear-gradient(
-        135deg,
-        #160b29,
-        #35135e,
-        #6c3fa0
-    );
-
-    color: white;
-    padding: 60px 20px;
-
-    text-align: center;
-}
-
-.header-content {
-    max-width: 1100px;
-    margin: auto;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-}
-
-.logo {
-    font-size: 4rem;
-    font-weight: bold;
-    letter-spacing: 8px;
-
-    color: #ffffff;
-
-    text-shadow:
-        0 0 10px #d7b7ff,
-        0 0 20px #a66cff;
-}
-
-header h1 {
-    font-size: 3rem;
-    margin-bottom: 10px;
-}
-
-.subtitle {
-    font-size: 1.1rem;
-    color: #eee3ff;
-}
-
-
-/* =========================================
-   MENU
-========================================= */
-
-nav {
-    background-color: #ffffff;
-
-    position: sticky;
-    top: 0;
-
-    z-index: 1000;
-
-    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+  background-color: var(--primary-color);
+  color: #ffffff;
+  padding: 1.2rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 nav ul {
-    list-style: none;
-
-    max-width: 1100px;
-    margin: auto;
-
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
 }
 
-nav li a {
-    display: block;
-
-    color: #35135e;
-
-    text-decoration: none;
-
-    padding: 18px 22px;
-
-    font-weight: bold;
-
-    transition: all 0.3s ease;
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
 }
 
-nav li a:hover {
-    background-color: #6c3fa0;
-    color: white;
+nav a:hover {
+  color: #e0b0ff;
 }
 
-
-/* =========================================
-   CONTEÚDO PRINCIPAL
-========================================= */
-
+/* Layout Principal com CSS Grid */
 main {
-    max-width: 1200px;
-
-    margin: 40px auto;
-
-    padding: 0 20px;
-
-    display: grid;
-
-    grid-template-columns: 1fr 300px;
-
-    gap: 30px;
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 2rem;
 }
 
 article {
-    background-color: white;
-
-    border-radius: 15px;
-
-    overflow: hidden;
-
-    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+  background: var(--card-bg);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
 }
 
-section {
-    padding: 40px;
+h1, h2 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
 }
 
-section + section {
-    border-top: 1px solid #eee;
+img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin: 1.5rem 0;
 }
-
-section h2 {
-    color: #4d227a;
-
-    font-size: 2rem;
-
-    margin-bottom: 20px;
-
-    position: relative;
-}
-
-section h2::after {
-    content: "";
-
-    display: block;
-
-    width: 55px;
-
-    height: 4px;
-
-    margin-top: 8px;
-
-    background-color: #9b63d1;
-
-    border-radius: 10px;
-}
-
-section h3 {
-    color: #5e328a;
-
-    margin: 25px 0 10px;
-}
-
-section p {
-    margin-bottom: 18px;
-}
-
-
-/* =========================================
-   HERO
-========================================= */
-
-.hero {
-    padding: 0;
-}
-
-.hero img {
-    width: 100%;
-    height: 450px;
-
-    object-fit: cover;
-
-    display: block;
-}
-
-.hero-text {
-    padding: 40px;
-}
-
-
-/* =========================================
-   CITAÇÃO
-========================================= */
 
 blockquote {
-    margin: 30px 0;
-
-    padding: 25px 30px;
-
-    border-left: 6px solid #8b4fbd;
-
-    background-color: #f4edfa;
-
-    color: #4d227a;
-
-    font-size: 1.3rem;
-
-    font-style: italic;
-
-    border-radius: 0 10px 10px 0;
+  background: #f0e6ff;
+  border-left: 5px solid var(--secondary-color);
+  padding: 1rem 1.5rem;
+  margin: 1.5rem 0;
+  font-style: italic;
+  font-weight: 500;
+  border-radius: 0 8px 8px 0;
 }
 
-
-/* =========================================
-   CARDS DOS INTEGRANTES
-========================================= */
-
-.members-grid {
-    display: grid;
-
-    grid-template-columns: repeat(2, 1fr);
-
-    gap: 25px;
-
-    margin-top: 30px;
+ul {
+  margin-left: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
-.member-card {
-    background-color: #faf8fc;
-
-    border: 1px solid #e5dced;
-
-    border-radius: 15px;
-
-    overflow: hidden;
-
-    transition:
-        transform 0.3s ease,
-        box-shadow 0.3s ease;
+ul li {
+  margin-bottom: 0.5rem;
 }
 
-.member-card:hover {
-    transform: translateY(-8px);
-
-    box-shadow:
-        0 12px 30px rgba(91, 49, 125, 0.20);
-}
-
-.member-card img {
-    width: 100%;
-
-    height: 330px;
-
-    object-fit: cover;
-
-    display: block;
-}
-
-.member-info {
-    padding: 20px;
-}
-
-.member-info h3 {
-    font-size: 1.5rem;
-
-    color: #4d227a;
-
-    margin: 0;
-}
-
-.real-name {
-    color: #777;
-
-    font-size: 0.9rem;
-
-    margin-bottom: 12px !important;
-}
-
-
-/* =========================================
-   LISTAS
-========================================= */
-
-.achievements,
-.curiosities ol {
-    padding-left: 25px;
-
-    margin-top: 20px;
-}
-
-.achievements li,
-.curiosities li {
-    margin-bottom: 12px;
-
-    padding-left: 5px;
-}
-
-.achievements li::marker {
-    color: #7b42a7;
-}
-
-
-/* =========================================
-   ASIDE
-========================================= */
-
+/* Sidebar e Rodapé */
 aside {
-    background:
-        linear-gradient(
-            160deg,
-            #29103f,
-            #54277b
-        );
-
-    color: white;
-
-    padding: 30px;
-
-    border-radius: 15px;
-
-    height: fit-content;
-
-    position: sticky;
-    top: 80px;
-
-    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
+  background: var(--card-bg);
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  height: fit-content;
 }
-
-aside h2 {
-    color: #ffffff;
-
-    margin-bottom: 20px;
-}
-
-aside h3 {
-    color: #dfc6f5;
-
-    margin: 15px 0 10px;
-}
-
-aside ul {
-    list-style: none;
-
-    padding-left: 0;
-}
-
-aside li {
-    padding: 6px 0;
-
-    border-bottom: 1px solid rgba(255,255,255,0.1);
-}
-
-aside hr {
-    border: none;
-
-    border-top: 1px solid rgba(255,255,255,0.2);
-
-    margin: 25px 0;
-}
-
-
-/* =========================================
-   FOOTER
-========================================= */
 
 footer {
-    background-color: #160b29;
-
-    color: white;
-
-    padding: 45px 20px;
-
-    margin-top: 50px;
+  text-align: center;
+  padding: 1.5rem;
+  background-color: var(--primary-color);
+  color: #ffffff;
+  margin-top: 3rem;
 }
 
-footer > div {
-    max-width: 1100px;
+/* Responsividade para Celulares e Tablets */
+@media (max-width: 768px) {
+  main {
+    grid-template-columns: 1fr;
+  }
 
-    margin: auto;
-}
-
-footer h2 {
-    color: #d9b9f5;
-
-    margin-bottom: 10px;
-}
-
-footer p {
-    color: #ddd;
-
-    margin-bottom: 10px;
-}
-
-.footer-bottom {
-    border-top: 1px solid rgba(255,255,255,0.15);
-
-    margin-top: 30px !important;
-
-    padding-top: 20px;
-
-    display: flex;
-
-    justify-content: space-between;
-
-    align-items: center;
-}
-
-.footer-bottom a {
-    color: #d9b9f5;
-
-    text-decoration: none;
-
-    font-weight: bold;
-
-    transition: color 0.3s ease;
-}
-
-.footer-bottom a:hover {
-    color: white;
-}
-
-
-/* =========================================
-   RESPONSIVIDADE
-========================================= */
-
-@media (max-width: 900px) {
-
-    main {
-        grid-template-columns: 1fr;
-    }
-
-    aside {
-        position: static;
-    }
-
-    .members-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-}
-
-
-@media (max-width: 650px) {
-
-    header {
-        padding: 40px 20px;
-    }
-
-    .header-content {
-        flex-direction: column;
-
-        gap: 10px;
-    }
-
-    .logo {
-        font-size: 3rem;
-    }
-
-    header h1 {
-        font-size: 2rem;
-    }
-
-    nav ul {
-        flex-direction: column;
-
-        text-align: center;
-    }
-
-    nav li a {
-        padding: 12px;
-    }
-
-    main {
-        margin: 20px auto;
-
-        padding: 0 10px;
-    }
-
-    section {
-        padding: 25px 20px;
-    }
-
-    .hero img {
-        height: 250px;
-    }
-
-    .hero-text {
-        padding: 25px 20px;
-    }
-
-    .members-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .member-card img {
-        height: 400px;
-    }
-
-    section h2 {
-        font-size: 1.6rem;
-    }
-
-    .footer-bottom {
-        flex-direction: column;
-
-        gap: 15px;
-
-        text-align: center;
-    }
-
+  header {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
 }
