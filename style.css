@@ -1,0 +1,307 @@
+/* ==============================
+   CONFIGURAÇÕES GERAIS
+================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f7f4fa;
+    color: #27212d;
+    line-height: 1.7;
+}
+
+.container {
+    width: 90%;
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+/* ==============================
+   CABEÇALHO
+================================= */
+
+header {
+    background: linear-gradient(135deg, #120b1d, #6f3fa8, #b27bd8);
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 4rem;
+    letter-spacing: 8px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+/* ==============================
+   MENU
+================================= */
+
+nav {
+    background-color: #21152d;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+nav li a {
+    display: block;
+    padding: 16px 22px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav li a:hover {
+    background-color: #9b5fc9;
+    color: #ffffff;
+}
+
+/* ==============================
+   CONTEÚDO PRINCIPAL
+================================= */
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 30px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+article,
+aside {
+    background-color: white;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 5px 20px rgba(46, 23, 63, 0.08);
+}
+
+section {
+    margin-bottom: 45px;
+}
+
+section:last-child {
+    margin-bottom: 0;
+}
+
+h2 {
+    color: #673a91;
+    font-size: 2rem;
+    margin-bottom: 18px;
+    border-left: 5px solid #a96ed0;
+    padding-left: 12px;
+}
+
+h3 {
+    color: #58317d;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+/* ==============================
+   IMAGEM PRINCIPAL
+================================= */
+
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    align-items: center;
+}
+
+.hero img {
+    width: 100%;
+    border-radius: 12px;
+    display: block;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* ==============================
+   CITAÇÃO
+================================= */
+
+blockquote {
+    margin: 25px 0;
+    padding: 20px 25px;
+    border-left: 5px solid #9d62c5;
+    background-color: #f1e8f7;
+    color: #593477;
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+/* ==============================
+   LISTA DE INTEGRANTES
+================================= */
+
+.members {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.members li {
+    background-color: #f5eef9;
+    border-radius: 8px;
+    padding: 15px;
+    border-left: 4px solid #9360b8;
+}
+
+.members li:hover {
+    background-color: #eadcf2;
+    transform: translateY(-2px);
+    transition: 0.2s;
+}
+
+/* ==============================
+   MÚSICAS
+================================= */
+
+.music-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.music-card {
+    background: linear-gradient(145deg, #f8f2fb, #eee3f5);
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #e2d3eb;
+    transition: 0.3s;
+}
+
+.music-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(79, 42, 101, 0.15);
+}
+
+.music-card h3 {
+    color: #703f95;
+}
+
+/* ==============================
+   ASIDE
+================================= */
+
+aside {
+    height: fit-content;
+    background: #2c1b3a;
+    color: white;
+}
+
+aside h2,
+aside h3 {
+    color: #d8b4f0;
+}
+
+aside ul {
+    padding-left: 20px;
+}
+
+aside hr {
+    border: none;
+    border-top: 1px solid #624578;
+    margin: 25px 0;
+}
+
+/* ==============================
+   RODAPÉ
+================================= */
+
+footer {
+    background-color: #17101e;
+    color: #ddd;
+    text-align: center;
+    padding: 30px 0;
+}
+
+footer p {
+    margin-bottom: 5px;
+}
+
+/* ==============================
+   RESPONSIVIDADE
+================================= */
+
+@media (max-width: 850px) {
+
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    aside {
+        order: 2;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 40px 0;
+    }
+
+    header h1 {
+        font-size: 2.8rem;
+        letter-spacing: 5px;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav li a {
+        padding: 12px;
+    }
+
+    article,
+    aside {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    .members,
+    .music-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
