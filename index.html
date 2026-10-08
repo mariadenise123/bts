@@ -1,47 +1,60 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BTS - Página Informativa</title>
+    <title>BTS | História, Integrantes e Música</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <header>
-        <nav>
-            <h2>BTS 💜</h2>
+<header id="inicio">
 
-            <ul>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#historia">História</a></li>
-                <li><a href="#integrantes">Integrantes</a></li>
-                <li><a href="#musicas">Músicas</a></li>
-            </ul>
-        </nav>
+    <nav>
+        <div class="logo">BTS <span>💜</span></div>
 
-        <div class="capa">
-            <img
-                src="https://commons.wikimedia.org/wiki/Special:Redirect/file/President%20Joe%20Biden%20and%20BTS%20in%20the%20Oval%20Office%20of%20the%20White%20House%2C%20May%2031%2C%202022.jpg"
-                alt="Os sete integrantes do BTS">
-            
+        <ul>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#historia">História</a></li>
+            <li><a href="#integrantes">Integrantes</a></li>
+            <li><a href="#musicas">Músicas</a></li>
+        </ul>
+    </nav>
+
+    <div class="hero">
+        <div class="hero-text">
+            <p class="subtitulo">BANGTAN SONYEONDAN</p>
+
             <h1>BTS</h1>
 
             <p>
-                Conheça a história, os integrantes e as músicas
-                de um dos maiores grupos de K-pop do mundo.
+                Conheça a história, os integrantes, as músicas
+                e as conquistas de um dos maiores grupos de K-pop
+                do mundo.
             </p>
+
+            <a href="#integrantes" class="botao">Conheça os integrantes</a>
         </div>
-    </header>
+
+        <img
+            src="https://commons.wikimedia.org/wiki/Special:Redirect/file/President%20Joe%20Biden%20and%20BTS%20in%20the%20Oval%20Office%20of%20the%20White%20House%2C%20May%2031%2C%202022.jpg"
+            alt="Os sete integrantes do BTS">
+    </div>
+
+</header>
 
 
-    <main>
+<main>
 
-        <section id="sobre">
+    <section id="sobre" class="sobre">
 
+        <div class="titulo">
+            <span>01</span>
             <h2>Sobre o BTS</h2>
+        </div>
+
+        <div class="sobre-grid">
 
             <article>
                 <p>
@@ -50,14 +63,16 @@
                 </p>
 
                 <p>
-                    BTS significa Bangtan Sonyeondan (방탄소년단).
-                    O grupo é formado por sete integrantes:
-                    RM, Jin, SUGA, j-hope, Jimin, V e Jungkook.
+                    O nome BTS vem de <strong>Bangtan Sonyeondan</strong>,
+                    escrito em coreano como 방탄소년단. O grupo também utiliza
+                    o significado "Beyond The Scene".
                 </p>
 
                 <p>
-                    Suas músicas falam sobre juventude, sonhos,
-                    amizade, dificuldades e amor próprio.
+                    Ao longo de sua carreira, os integrantes conquistaram
+                    reconhecimento internacional através de suas músicas,
+                    apresentações e mensagens sobre juventude, sonhos,
+                    amizade e amor próprio.
                 </p>
             </article>
 
@@ -65,165 +80,351 @@
                 <h3>Informações</h3>
 
                 <ul>
+                    <li><strong>Nome:</strong> BTS</li>
                     <li><strong>País:</strong> Coreia do Sul</li>
                     <li><strong>Estreia:</strong> 2013</li>
                     <li><strong>Integrantes:</strong> 7</li>
                     <li><strong>Fandom:</strong> ARMY</li>
-                    <li><strong>Gênero:</strong> K-pop</li>
+                    <li><strong>Empresa:</strong> BIGHIT MUSIC</li>
                 </ul>
             </aside>
 
-        </section>
+        </div>
+
+    </section>
 
 
-        <section id="historia">
+    <section id="historia" class="historia">
 
-            <h2>História</h2>
+        <div class="titulo">
+            <span>02</span>
+            <h2>História do grupo</h2>
+        </div>
 
-            <p>
-                O BTS começou sua carreira em 2013 e, ao longo dos anos,
-                conquistou fãs na Coreia do Sul e em diversos países.
-                O grupo ficou conhecido mundialmente por suas músicas,
-                apresentações e mensagens de inspiração.
-            </p>
+        <div class="linha-tempo">
 
-            <blockquote>
-                "Love yourself. Speak yourself."
-            </blockquote>
+            <article>
+                <strong>2013</strong>
+                <h3>A estreia</h3>
+                <p>
+                    O BTS fez sua estreia oficial com o single álbum
+                    <em>2 Cool 4 Skool</em>.
+                </p>
+            </article>
 
-        </section>
+            <article>
+                <strong>2015</strong>
+                <h3>Crescimento</h3>
+                <p>
+                    A série <em>The Most Beautiful Moment in Life</em>
+                    ajudou o grupo a alcançar um público cada vez maior.
+                </p>
+            </article>
+
+            <article>
+                <strong>2016</strong>
+                <h3>WINGS</h3>
+                <p>
+                    O álbum <em>WINGS</em> marcou uma importante fase
+                    artística na trajetória do grupo.
+                </p>
+            </article>
+
+            <article>
+                <strong>2017</strong>
+                <h3>Reconhecimento mundial</h3>
+                <p>
+                    O BTS começou a ganhar ainda mais destaque
+                    internacional e em grandes premiações.
+                </p>
+            </article>
+
+            <article>
+                <strong>2020</strong>
+                <h3>Dynamite</h3>
+                <p>
+                    O lançamento de <em>Dynamite</em> levou o grupo
+                    a novos públicos ao redor do mundo.
+                </p>
+            </article>
+
+            <article>
+                <strong>Hoje</strong>
+                <h3>Legado</h3>
+                <p>
+                    O grupo continua sendo uma das maiores referências
+                    internacionais do K-pop.
+                </p>
+            </article>
+
+        </div>
+
+    </section>
 
 
-        <section id="integrantes">
+    <section class="citacao">
 
-            <h2>Os 7 integrantes</h2>
+        <blockquote>
+            "Love yourself. Speak yourself."
+        </blockquote>
 
-            <div class="cards">
+        <p>
+            Uma mensagem que representa parte da filosofia transmitida
+            pelo BTS ao longo de sua carreira.
+        </p>
 
-                <article>
+    </section>
+
+
+    <section id="integrantes" class="integrantes">
+
+        <div class="titulo">
+            <span>03</span>
+            <h2>Os integrantes</h2>
+        </div>
+
+        <p class="introducao">
+            O BTS é formado por sete artistas, cada um com sua própria
+            personalidade, estilo e trajetória.
+        </p>
+
+        <div class="cards">
+
+
+            <article class="card">
+
+                <div class="foto">
                     <img
                         src="https://commons.wikimedia.org/wiki/Special:Redirect/file/RM%20in%20the%20Oval%20Office%20of%20the%20White%20House%2C%20May%2031%2C%202022%20%28cropped%29.jpg"
-                        alt="RM, líder do BTS">
+                        alt="RM, integrante do BTS">
+                </div>
 
+                <div class="card-info">
+                    <span>LÍDER • RAPPER</span>
                     <h3>RM</h3>
+                    <p>Kim Nam-joon</p>
+                    <small>
+                        Líder do BTS, rapper, compositor e produtor musical.
+                    </small>
+                </div>
 
-                    <p>
-                        Kim Nam-joon — líder e rapper do grupo.
-                    </p>
-                </article>
+            </article>
 
 
-                <article>
+            <article class="card">
+
+                <div class="foto">
                     <img
                         src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Kim%20Seokjin%20at%20the%20White%20House%2C%20May%2031%2C%202022.jpg"
                         alt="Jin, integrante do BTS">
+                </div>
 
+                <div class="card-info">
+                    <span>VOCALISTA</span>
                     <h3>Jin</h3>
+                    <p>Kim Seok-jin</p>
+                    <small>
+                        Vocalista conhecido por sua voz e personalidade divertida.
+                    </small>
+                </div>
 
-                    <p>
-                        Kim Seok-jin — vocalista do grupo.
-                    </p>
-                </article>
+            </article>
 
 
-                <article>
+            <article class="card">
+
+                <div class="foto">
                     <img
                         src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Suga%20in%20the%20Oval%20Office%20of%20the%20White%20House%2C%20May%2031%2C%202022%20%28cropped%29.jpg"
                         alt="SUGA, integrante do BTS">
+                </div>
 
+                <div class="card-info">
+                    <span>RAPPER • PRODUTOR</span>
                     <h3>SUGA</h3>
+                    <p>Min Yoon-gi</p>
+                    <small>
+                        Rapper, compositor e produtor. Também utiliza o nome Agust D.
+                    </small>
+                </div>
 
-                    <p>
-                        Min Yoon-gi — rapper, compositor e produtor.
-                    </p>
-                </article>
+            </article>
 
 
-                <article>
+            <article class="card">
+
+                <div class="foto">
                     <img
                         src="https://commons.wikimedia.org/wiki/Special:Redirect/file/J-hope%20at%20the%20Oval%20Office%20of%20the%20White%20House%2C%20May%2031%2C%202022%20%28cropped%29.jpg"
                         alt="j-hope, integrante do BTS">
+                </div>
 
+                <div class="card-info">
+                    <span>RAPPER • DANÇARINO</span>
                     <h3>j-hope</h3>
+                    <p>Jung Ho-seok</p>
+                    <small>
+                        Conhecido por sua dança, energia e presença de palco.
+                    </small>
+                </div>
 
-                    <p>
-                        Jung Ho-seok — rapper e dançarino.
-                    </p>
-                </article>
+            </article>
 
 
-                <article>
+            <article class="card">
+
+                <div class="foto">
                     <img
                         src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Park%20Jimin%20at%20the%20White%20House%2C%20May%2031%2C%202022.jpg"
                         alt="Jimin, integrante do BTS">
+                </div>
 
+                <div class="card-info">
+                    <span>VOCALISTA • DANÇARINO</span>
                     <h3>Jimin</h3>
+                    <p>Park Ji-min</p>
+                    <small>
+                        Vocalista e dançarino conhecido por sua performance.
+                    </small>
+                </div>
 
-                    <p>
-                        Park Ji-min — vocalista e dançarino.
-                    </p>
-                </article>
+            </article>
 
 
-                <article>
+            <article class="card">
+
+                <div class="foto">
                     <img
                         src="https://commons.wikimedia.org/wiki/Special:Redirect/file/V%20in%20the%20Oval%20Office%20of%20the%20White%20House%2C%20May%2031%2C%202022%20%28cropped%29.jpg"
                         alt="V, integrante do BTS">
+                </div>
 
+                <div class="card-info">
+                    <span>VOCALISTA</span>
                     <h3>V</h3>
+                    <p>Kim Tae-hyung</p>
+                    <small>
+                        Vocalista com forte presença artística e atuação.
+                    </small>
+                </div>
 
-                    <p>
-                        Kim Tae-hyung — vocalista e ator.
-                    </p>
-                </article>
+            </article>
 
 
-                <article>
+            <article class="card">
+
+                <div class="foto">
                     <img
                         src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Jeon%20Jungkook%20at%20the%20White%20House%2C%2031%20May%202022.jpg"
                         alt="Jungkook, integrante do BTS">
+                </div>
 
+                <div class="card-info">
+                    <span>VOCALISTA • DANÇARINO</span>
                     <h3>Jungkook</h3>
+                    <p>Jeon Jung-kook</p>
+                    <small>
+                        Integrante mais jovem, conhecido por sua versatilidade.
+                    </small>
+                </div>
 
-                    <p>
-                        Jeon Jung-kook — vocalista e dançarino.
-                    </p>
-                </article>
+            </article>
 
-            </div>
+        </div>
 
-        </section>
-
-
-        <section id="musicas">
-
-            <h2>Músicas famosas</h2>
-
-            <ul class="musicas">
-                <li>Dynamite</li>
-                <li>Butter</li>
-                <li>DNA</li>
-                <li>Fake Love</li>
-                <li>Spring Day</li>
-                <li>Boy With Luv</li>
-                <li>MIC Drop</li>
-                <li>Black Swan</li>
-            </ul>
-
-        </section>
-
-    </main>
+    </section>
 
 
-    <footer>
+    <section id="musicas" class="musicas-section">
 
+        <div class="titulo">
+            <span>04</span>
+            <h2>Músicas marcantes</h2>
+        </div>
+
+        <div class="musicas">
+
+            <div>Dynamite <span>2020</span></div>
+            <div>Butter <span>2021</span></div>
+            <div>DNA <span>2017</span></div>
+            <div>Fake Love <span>2018</span></div>
+            <div>Spring Day <span>2017</span></div>
+            <div>Boy With Luv <span>2019</span></div>
+            <div>MIC Drop <span>2017</span></div>
+            <div>Black Swan <span>2020</span></div>
+
+        </div>
+
+    </section>
+
+
+    <section class="conquistas">
+
+        <div class="titulo">
+            <span>05</span>
+            <h2>Conquistas e impacto</h2>
+        </div>
+
+        <div class="conquistas-grid">
+
+            <article>
+                <b>🌎</b>
+                <h3>Impacto mundial</h3>
+                <p>
+                    O BTS ajudou a levar o K-pop para públicos
+                    de diferentes partes do mundo.
+                </p>
+            </article>
+
+            <article>
+                <b>🎵</b>
+                <h3>Música</h3>
+                <p>
+                    O grupo alcançou posições de destaque em
+                    importantes paradas musicais.
+                </p>
+            </article>
+
+            <article>
+                <b>🏆</b>
+                <h3>Premiações</h3>
+                <p>
+                    Ao longo da carreira, recebeu diversos
+                    prêmios e reconhecimentos.
+                </p>
+            </article>
+
+            <article>
+                <b>💜</b>
+                <h3>ARMY</h3>
+                <p>
+                    O fandom ARMY reúne fãs do grupo em
+                    diversos países.
+                </p>
+            </article>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <div>
+        <h2>BTS 💜</h2>
         <p>
-            © 2026 - Projeto escolar sobre BTS 💜
+            Página informativa desenvolvida para fins educacionais.
         </p>
+    </div>
 
-    </footer>
+    <div>
+        <p>© 2026 • Projeto sobre BTS</p>
+        <a href="#inicio">Voltar ao topo ↑</a>
+    </div>
+
+</footer>
 
 </body>
-
 </html>
-
