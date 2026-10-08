@@ -1,14 +1,21 @@
-# BTS: O Fenômeno Global do K-Pop 💜
+# Página Informativa Completa: BTS (Beyond The Scene)
 
-Página web informativa desenvolvida como projeto acadêmico para apresentar a trajetória, impacto cultural e integrantes do grupo sul-coreano BTS.
+Projeto desenvolvido como uma página temática informativa no formato de artigo digital, abrangendo a trajetória, os 7 membros e o impacto cultural global do grupo BTS.
 
-## 🎯 Tema Escolhido
-Cultura Pop e Inovação Musical (BTS e o impacto cultural global).
+## 📌 Conteúdo da Página
+- **Biografia e Origem:** Início do grupo e a evolução do seu estilo musical.
+- **Perfis dos 7 Integrantes:** RM, Jin, Suga, J-Hope, Jimin, V e Jungkook.
+- **Discografia por Eras:** Análise das principais eras conceptuais do grupo.
+- **Conquistas Globais:** Recordes de vendas, digressões mundialmente esgotadas e prémios.
+- **Impacto Social:** Parceria com a UNICEF e discursos na ONU.
 
-## 🛠️ Tecnologias Utilizadas
-* **HTML5:** Estruturação semântica com `<header>`, `<nav>`, `<main>`, `<article>`, `<section>`, `<aside>` e `<footer>`.
-* **CSS3:** Layout com Flexbox e CSS Grid, variáveis CSS, transições e Media Queries para responsividade.
-* **Git & GitHub:** Versionamento do código-fonte e publicação via GitHub Pages.
+## 🛠️ Tecnologias
+- **HTML5:** Estrutura semântica (`<header>`, `<nav>`, `<main>`, `<article>`, `<section>`, `<aside>`, `<footer>`).
+- **CSS3:** Estilização responsiva com Flexbox e CSS Grid.
+- **GitHub Pages:** Hospedagem pública da aplicação web.
 
-## 🔗 Acesse o Projeto
-[Clique aqui para ver a página publicada](https://seu-usuario.github.io/pagina-bts/)
+## 🌐 Link Público
+[Aceda à versão publicada no GitHub Pages](https://seu-usuario.github.io/pagina-informativa-bts/)
+
+## 📄 Licença
+Distribuído sob a licença open-source [MIT](LICENSE).
