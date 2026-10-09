@@ -1,21 +1,34 @@
-# Página Informativa Completa: BTS (Beyond The Scene)
 
-Projeto desenvolvido como uma página temática informativa no formato de artigo digital, abrangendo a trajetória, os 7 membros e o impacto cultural global do grupo BTS.
+# BTS — Música que conecta
 
-## 📌 Conteúdo da Página
-- **Biografia e Origem:** Início do grupo e a evolução do seu estilo musical.
-- **Perfis dos 7 Integrantes:** RM, Jin, Suga, J-Hope, Jimin, V e Jungkook.
-- **Discografia por Eras:** Análise das principais eras conceptuais do grupo.
-- **Conquistas Globais:** Recordes de vendas, digressões mundialmente esgotadas e prémios.
-- **Impacto Social:** Parceria com a UNICEF e discursos na ONU.
+Página informativa sobre o BTS, desenvolvida como projeto educacional.
 
-## 🛠️ Tecnologias
-- **HTML5:** Estrutura semântica (`<header>`, `<nav>`, `<main>`, `<article>`, `<section>`, `<aside>`, `<footer>`).
-- **CSS3:** Estilização responsiva com Flexbox e CSS Grid.
-- **GitHub Pages:** Hospedagem pública da aplicação web.
+## Tema escolhido
+BTS (Bangtan Sonyeondan), grupo sul-coreano formado por RM, Jin, SUGA, j-hope, Jimin, V e Jung Kook.
 
-## 🌐 Link Público
-[Aceda à versão publicada no GitHub Pages](https://seu-usuario.github.io/pagina-informativa-bts/)
+## Tecnologias utilizadas
+- HTML5
+- CSS3
+- Git e GitHub
+- GitHub Pages
 
-## 📄 Licença
-Distribuído sob a licença open-source [MIT](LICENSE).
+## Como visualizar
+Abra o arquivo `index.html` no navegador.
+Mantenha a pasta `images` no mesmo diretório.
+
+## Publicação
+1. Crie um repositório público chamado `pagina-informativa-bts`.
+2. Envie todos os arquivos e a pasta `images`.
+3. Acesse Settings → Pages.
+4. Escolha a branch `main` e a pasta `/ (root)`.
+5. Salve para publicar.
+
+Link do site:
+https://SEU-USUARIO.github.io/pagina-informativa-bts/
+
+## Licença
+Este projeto utiliza a licença MIT.
+
+## Créditos
+Imagens fornecidas para o projeto pelo usuário.
+Página de fã para fins educacionais, sem afiliação oficial ao BTS.
