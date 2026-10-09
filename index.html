@@ -1,144 +1,133 @@
 
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BTS — Música que conecta</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
 
-<header class="hero" id="inicio">
-    <nav>
-        <a class="logo" href="#inicio">BTS ✦</a>
-        <ul>
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#membros">Membros</a></li>
-            <li><a href="#impacto">Impacto</a></li>
-        </ul>
-    </nav>
+html {
+scroll-behavior: smooth;
+}
 
-    <div class="hero-content">
-        <p>BANGTAN SONYEONDAN</p>
-        <h1>Música que<br><em>conecta o mundo.</em></h1>
-        <p>Conheça o BTS, o grupo que conquistou fãs em todo o mundo.</p>
-        <a class="botao" href="#sobre">Conheça o grupo ↓</a>
-    </div>
-</header>
+body {
+font-family: Arial, sans-serif;
+background: #f8f5f2;
+color: #292230;
+line-height: 1.7;
+}
 
-<main>
-    <article>
-        <section id="sobre" class="secao">
-            <p class="subtitulo">01 / QUEM SÃO</p>
-            <h2>Sete artistas.<br><em>Uma voz coletiva.</em></h2>
-            <p>
-                BTS é um grupo sul-coreano formado por sete integrantes:
-                RM, Jin, SUGA, j-hope, Jimin, V e Jung Kook.
-                O grupo estreou em 2013 e ficou conhecido por suas músicas,
-                coreografias e apresentações marcantes.
-            </p>
-            <p>
-                Suas canções abordam temas como amizade, sonhos,
-                crescimento pessoal, autoestima e desafios da vida.
-            </p>
-        </section>
+header {
+background: #292030;
+color: white;
+padding: 25px;
+}
 
-        <section class="foto-grupo">
-            <img src="images/bts-grupo.png"
-                 alt="Os sete integrantes do BTS reunidos em roupas formais.">
-        </section>
+nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
 
-        <section id="membros" class="secao">
-            <p class="subtitulo">02 / OS INTEGRANTES</p>
-            <h2>Conheça os <em>membros</em></h2>
+nav ul {
+display: flex;
+gap: 15px;
+list-style: none;
+}
 
-            <div class="galeria">
-                <div class="card">
-                    <img src="images/bts-rm-oculos.webp" alt="RM sorrindo com óculos.">
-                    <h3>RM</h3>
-                    <p>Líder e rapper</p>
-                </div>
+a {
+color: inherit;
+text-decoration: none;
+}
 
-                <div class="card">
-                    <img src="images/bts-jungkook-bege.webp" alt="Jung Kook em ensaio fotográfico.">
-                    <h3>Jin</h3>
-                    <p>Vocalista</p>
-                </div>
+a:hover {
+color: #c6b5e3;
+}
 
-                <div class="card">
-                    <img src="images/bts-suga-retrato.webp" alt="SUGA em um retrato.">
-                    <h3>SUGA</h3>
-                    <p>Rapper e produtor</p>
-                </div>
+.hero {
+padding: 90px 10px;
+}
 
-                <div class="card">
-                    <img src="images/bts-jhope-formal.webp" alt="j-hope sorrindo.">
-                    <h3>j-hope</h3>
-                    <p>Rapper e dançarino</p>
-                </div>
+h1 {
+font-size: 45px;
+}
 
-                <div class="card">
-                    <img src="images/bts-jimin-prateado.jpg" alt="Jimin com cabelo prateado.">
-                    <h3>Jimin</h3>
-                    <p>Vocalista e dançarino</p>
-                </div>
+em {
+color: #c6b5e3;
+}
 
-                <div class="card">
-                    <img src="images/bts-membros.jpg" alt="Integrantes do BTS em um evento.">
-                    <h3>V</h3>
-                    <p>Vocalista</p>
-                </div>
+section {
+padding: 40px 25px;
+max-width: 1000px;
+margin: auto;
+}
 
-                <div class="card">
-                    <img src="images/bts-jungkook-editorial.webp" alt="Jung Kook em um editorial de moda.">
-                    <h3>Jung Kook</h3>
-                    <p>Vocalista e dançarino</p>
-                </div>
-            </div>
-        </section>
+h2 {
+margin-bottom: 20px;
+color: #765493;
+}
 
-        <section class="citacao">
-            <p class="subtitulo">03 / MENSAGEM E IMPACTO</p>
-            <blockquote>
-                “A música pode aproximar pessoas de diferentes culturas
-                e idiomas.”
-            </blockquote>
-        </section>
+section img {
+width: 100%;
+max-height: 450px;
+object-fit: cover;
+margin-top: 20px;
+}
 
-        <section id="impacto" class="secao">
-            <h2>Uma comunidade <em>sem fronteiras.</em></h2>
-            <p>
-                Os fãs do BTS são conhecidos como ARMY.
-                Essa comunidade internacional compartilha o interesse
-                pela música, pelas mensagens do grupo e por suas apresentações.
-            </p>
+.galeria {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 15px;
+}
 
-            <h3>O que torna o BTS especial?</h3>
-            <ul>
-                <li>Músicas com temas pessoais e sociais.</li>
-                <li>Coreografias e apresentações elaboradas.</li>
-                <li>Conexão com fãs de diversos países.</li>
-                <li>Participação dos integrantes na criação musical.</li>
-            </ul>
-        </section>
+.galeria img {
+height: 250px;
+object-fit: cover;
+}
 
-        <aside class="curiosidade">
-            <h2>Você sabia?</h2>
-            <p>
-                BTS é a abreviação de Bangtan Sonyeondan.
-                O grupo também utiliza a expressão “Beyond the Scene”
-                em sua identidade internacional.
-            </p>
-        </aside>
-    </article>
-</main>
+.galeria div {
+background: #eee8f3;
+padding: 10px;
+}
 
-<footer>
-    <p>BTS ✦ Música que conecta</p>
-    <p>Projeto educacional sobre o BTS · 2026</p>
-    <a href="#inicio">Voltar ao topo ↑</a>
-</footer>
+blockquote {
+padding: 20px;
+background: #e9e1f0;
+margin: 20px 0;
+}
 
-</body>
-</html>
+aside {
+margin: 25px;
+padding: 25px;
+background: #eee8f3;
+}
+
+footer {
+background: #292030;
+color: white;
+text-align: center;
+padding: 25px;
+}
+
+@media (max-width: 600px) {
+nav {
+flex-direction: column;
+gap: 15px;
+}
+
+nav ul {
+flex-wrap: wrap;
+justify-content: center;
+}
+
+h1 {
+font-size: 35px;
+}
+
+.galeria {
+grid-template-columns: repeat(2, 1fr);
+}
+
+.galeria img {
+height: 200px;
+}
+}
