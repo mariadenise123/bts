@@ -1,133 +1,69 @@
 
-* {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BTS - Música que conecta</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<nav>
+<a href="#inicio">BTS ✦</a>
+<ul>
+<li><a href="#sobre">Sobre</a></li>
+<li><a href="#membros">Membros</a></li>
+<li><a href="#impacto">Impacto</a></li>
+</ul>
+</nav>
+<div id="inicio" class="hero">
+<p>BANGTAN SONYEONDAN</p>
+<h1>Música que<br><em>conecta o mundo.</em></h1>
+<p>Sete artistas, uma comunidade global.</p>
+</div>
+</header>
 
-html {
-scroll-behavior: smooth;
-}
+<main>
+<article>
+<section id="sobre">
+<h2>Sete artistas. Uma voz coletiva.</h2>
+<p>O BTS é um grupo sul-coreano formado por RM, Jin, SUGA, j-hope, Jimin, V e Jung Kook. O grupo estreou em 2013.</p>
+<img src="images/bts-grupo.png" alt="Integrantes do BTS reunidos">
+</section>
 
-body {
-font-family: Arial, sans-serif;
-background: #f8f5f2;
-color: #292230;
-line-height: 1.7;
-}
+<section id="membros">
+<h2>Conheça os membros</h2>
+<div class="galeria">
+<div><img src="images/bts-rm-oculos.webp" alt="RM"><h3>RM</h3></div>
+<div><img src="images/bts-jungkook-bege.webp" alt="Jin"><h3>Jin</h3></div>
+<div><img src="images/bts-suga-retrato.webp" alt="SUGA"><h3>SUGA</h3></div>
+<div><img src="images/bts-jhope-formal.webp" alt="j-hope"><h3>j-hope</h3></div>
+<div><img src="images/bts-jimin-prateado.jpg" alt="Jimin"><h3>Jimin</h3></div>
+<div><img src="images/bts-membros.jpg" alt="V"><h3>V</h3></div>
+<div><img src="images/bts-jungkook-editorial.webp" alt="Jung Kook"><h3>Jung Kook</h3></div>
+</div>
+</section>
 
-header {
-background: #292030;
-color: white;
-padding: 25px;
-}
+<section id="impacto">
+<h2>Uma comunidade sem fronteiras</h2>
+<blockquote>A música aproxima pessoas de diferentes culturas.</blockquote>
+<ul>
+<li>Músicas com mensagens pessoais.</li>
+<li>Coreografias marcantes.</li>
+<li>Fãs em vários países.</li>
+</ul>
+</section>
 
-nav {
-display: flex;
-justify-content: space-between;
-align-items: center;
-}
+<aside>
+<h2>Você sabia?</h2>
+<p>Os fãs do BTS são conhecidos como ARMY.</p>
+</aside>
+</article>
+</main>
 
-nav ul {
-display: flex;
-gap: 15px;
-list-style: none;
-}
-
-a {
-color: inherit;
-text-decoration: none;
-}
-
-a:hover {
-color: #c6b5e3;
-}
-
-.hero {
-padding: 90px 10px;
-}
-
-h1 {
-font-size: 45px;
-}
-
-em {
-color: #c6b5e3;
-}
-
-section {
-padding: 40px 25px;
-max-width: 1000px;
-margin: auto;
-}
-
-h2 {
-margin-bottom: 20px;
-color: #765493;
-}
-
-section img {
-width: 100%;
-max-height: 450px;
-object-fit: cover;
-margin-top: 20px;
-}
-
-.galeria {
-display: grid;
-grid-template-columns: repeat(3, 1fr);
-gap: 15px;
-}
-
-.galeria img {
-height: 250px;
-object-fit: cover;
-}
-
-.galeria div {
-background: #eee8f3;
-padding: 10px;
-}
-
-blockquote {
-padding: 20px;
-background: #e9e1f0;
-margin: 20px 0;
-}
-
-aside {
-margin: 25px;
-padding: 25px;
-background: #eee8f3;
-}
-
-footer {
-background: #292030;
-color: white;
-text-align: center;
-padding: 25px;
-}
-
-@media (max-width: 600px) {
-nav {
-flex-direction: column;
-gap: 15px;
-}
-
-nav ul {
-flex-wrap: wrap;
-justify-content: center;
-}
-
-h1 {
-font-size: 35px;
-}
-
-.galeria {
-grid-template-columns: repeat(2, 1fr);
-}
-
-.galeria img {
-height: 200px;
-}
-}
+<footer>
+<p>Projeto educacional sobre o BTS - 2026</p>
+</footer>
+</body>
+</html>
