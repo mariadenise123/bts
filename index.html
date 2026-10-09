@@ -1,232 +1,144 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BTS: O Fenómeno Global</title>
-  <style>
-    :root {
-      --purple-primary: #5c328b;
-      --purple-light: #9d71db;
-      --purple-dark: #2a1443;
-      --bg-color: #f7f5fa;
-      --card-bg: #ffffff;
-      --text-color: #2c2c2c;
-    }
-
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: var(--bg-color);
-      color: var(--text-color);
-      line-height: 1.6;
-    }
-
-    header {
-      background: linear-gradient(135deg, var(--purple-dark), var(--purple-primary));
-      color: white;
-      padding: 2rem 1rem 1rem 1rem;
-      text-align: center;
-    }
-
-    header h1 { font-size: 2.2rem; }
-    .subtitle { font-size: 1rem; color: #e0d2f7; margin-top: 0.3rem; }
-
-    nav {
-      margin-top: 1.5rem;
-      border-top: 1px solid rgba(255,255,255,0.2);
-      padding-top: 0.8rem;
-    }
-
-    nav ul {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      list-style: none;
-      gap: 1.2rem;
-    }
-
-    nav a {
-      color: #ffffff;
-      text-decoration: none;
-      font-weight: 600;
-    }
-
-    nav a:hover { color: #ffd700; }
-
-    main {
-      display: grid;
-      grid-template-columns: 3fr 1fr;
-      gap: 2rem;
-      max-width: 1200px;
-      margin: 2rem auto;
-      padding: 0 1rem;
-    }
-
-    article section {
-      background: var(--card-bg);
-      padding: 1.8rem;
-      border-radius: 10px;
-      margin-bottom: 1.8rem;
-      box-shadow: 0 3px 10px rgba(0,0,0,0.05);
-    }
-
-    h2 {
-      color: var(--purple-primary);
-      border-bottom: 2px solid var(--purple-light);
-      padding-bottom: 0.4rem;
-      margin-bottom: 1rem;
-    }
-
-    .membros-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 1.2rem;
-      margin-top: 1rem;
-    }
-
-    .card-membro {
-      background: #faf7fc;
-      border: 1px solid #e2d7f3;
-      border-radius: 8px;
-      padding: 1rem;
-      text-align: center;
-    }
-
-    .card-membro img {
-      width: 100%;
-      height: 240px;
-      object-fit: cover;
-      border-radius: 6px;
-    }
-
-    .card-membro h3 { margin-top: 0.6rem; color: var(--purple-dark); }
-    .card-membro .cargo { font-size: 0.8rem; font-weight: bold; color: var(--purple-primary); }
-    .card-membro .bio { font-size: 0.85rem; color: #555; margin-top: 0.4rem; }
-
-    aside .widget {
-      background: var(--card-bg);
-      padding: 1.2rem;
-      border-radius: 10px;
-      margin-bottom: 1.5rem;
-      box-shadow: 0 3px 10px rgba(0,0,0,0.05);
-    }
-
-    footer {
-      background-color: var(--purple-dark);
-      color: #d8c2f5;
-      text-align: center;
-      padding: 1.5rem;
-      margin-top: 2rem;
-    }
-
-    @media (max-width: 800px) {
-      main { grid-template-columns: 1fr; }
-      nav ul { flex-direction: column; gap: 0.5rem; }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BTS — Música que conecta</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header>
-    <h1>BTS: Além da Cena</h1>
-    <p class="subtitle">A Trajetória, os Membros e o Impacto Cultural do Grupo</p>
+<header class="hero" id="inicio">
     <nav>
-      <ul>
-        <li><a href="#biografia">Biografia</a></li>
-        <li><a href="#membros">Membros</a></li>
-        <li><a href="#conquistas">Conquistas</a></li>
-        <li><a href="#impacto">Impacto Social</a></li>
-      </ul>
+        <a class="logo" href="#inicio">BTS ✦</a>
+        <ul>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#membros">Membros</a></li>
+            <li><a href="#impacto">Impacto</a></li>
+        </ul>
     </nav>
-  </header>
 
-  <main>
+    <div class="hero-content">
+        <p>BANGTAN SONYEONDAN</p>
+        <h1>Música que<br><em>conecta o mundo.</em></h1>
+        <p>Conheça o BTS, o grupo que conquistou fãs em todo o mundo.</p>
+        <a class="botao" href="#sobre">Conheça o grupo ↓</a>
+    </div>
+</header>
+
+<main>
     <article>
-      <section id="biografia">
-        <h2>1. História e Biografia</h2>
-        <p>O <strong>BTS</strong> (<em>Bangtan Sonyeondan</em>) é um grupo sul-coreano composto por sete integrantes formado em 2013. Tornaram-se num dos maiores fenómenos da música mundial.</p>
-      </section>
+        <section id="sobre" class="secao">
+            <p class="subtitulo">01 / QUEM SÃO</p>
+            <h2>Sete artistas.<br><em>Uma voz coletiva.</em></h2>
+            <p>
+                BTS é um grupo sul-coreano formado por sete integrantes:
+                RM, Jin, SUGA, j-hope, Jimin, V e Jung Kook.
+                O grupo estreou em 2013 e ficou conhecido por suas músicas,
+                coreografias e apresentações marcantes.
+            </p>
+            <p>
+                Suas canções abordam temas como amizade, sonhos,
+                crescimento pessoal, autoestima e desafios da vida.
+            </p>
+        </section>
 
-      <section id="membros">
-        <h2>2. Conheça os 7 Membros</h2>
-        <div class="membros-grid">
-          
-          <div class="card-membro">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/RM_for_Dispatch_White_Day_Special%2C_February_2019_01.jpg/800px-RM_for_Dispatch_White_Day_Special%2C_February_2019_01.jpg" alt="RM">
-            <h3>RM</h3>
-            <p class="cargo">Kim Nam-joon • Líder & Rapper</p>
-            <p class="bio">Porta-voz do grupo e produtor musical principal.</p>
-          </div>
+        <section class="foto-grupo">
+            <img src="images/bts-grupo.png"
+                 alt="Os sete integrantes do BTS reunidos em roupas formais.">
+        </section>
 
-          <div class="card-membro">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Jin_for_Dispatch_White_Day_Special%2C_February_2019_02.jpg/800px-Jin_for_Dispatch_White_Day_Special%2C_February_2019_02.jpg" alt="Jin">
-            <h3>Jin</h3>
-            <p class="cargo">Kim Seok-jin • Vocalista</p>
-            <p class="bio">Conhecido pelo seu grande alcance vocal e carisma.</p>
-          </div>
+        <section id="membros" class="secao">
+            <p class="subtitulo">02 / OS INTEGRANTES</p>
+            <h2>Conheça os <em>membros</em></h2>
 
-          <div class="card-membro">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Suga_for_Dispatch_White_Day_Special%2C_February_2019_01.jpg/800px-Suga_for_Dispatch_White_Day_Special%2C_February_2019_01.jpg" alt="Suga">
-            <h3>Suga</h3>
-            <p class="cargo">Min Yoon-gi • Rapper & Produtor</p>
-            <p class="bio">Produtor de grandes sucessos do K-Pop.</p>
-          </div>
+            <div class="galeria">
+                <div class="card">
+                    <img src="images/bts-rm-oculos.webp" alt="RM sorrindo com óculos.">
+                    <h3>RM</h3>
+                    <p>Líder e rapper</p>
+                </div>
 
-          <div class="card-membro">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/J-Hope_for_Dispatch_White_Day_Special%2C_February_2019_01.jpg/800px-J-Hope_for_Dispatch_White_Day_Special%2C_February_2019_01.jpg" alt="J-Hope">
-            <h3>J-Hope</h3>
-            <p class="cargo">Jung Ho-seok • Dançarino & Rapper</p>
-            <p class="bio">Líder das coreografias marcantes do septeto.</p>
-          </div>
+                <div class="card">
+                    <img src="images/bts-jungkook-bege.webp" alt="Jung Kook em ensaio fotográfico.">
+                    <h3>Jin</h3>
+                    <p>Vocalista</p>
+                </div>
 
-          <div class="card-membro">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Jimin_for_Dispatch_White_Day_Special%2C_February_2019_01.jpg/800px-Jimin_for_Dispatch_White_Day_Special%2C_February_2019_01.jpg" alt="Jimin">
-            <h3>Jimin</h3>
-            <p class="cargo">Park Ji-min • Dançarino & Vocalista</p>
-            <p class="bio">Destaque na dança contemporânea e voz marcante.</p>
-          </div>
+                <div class="card">
+                    <img src="images/bts-suga-retrato.webp" alt="SUGA em um retrato.">
+                    <h3>SUGA</h3>
+                    <p>Rapper e produtor</p>
+                </div>
 
-          <div class="card-membro">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/V_for_Dispatch_White_Day_Special%2C_February_2019_01.jpg/800px-V_for_Dispatch_White_Day_Special%2C_February_2019_01.jpg" alt="V">
-            <h3>V</h3>
-            <p class="cargo">Kim Tae-hyung • Vocalista & Visual</p>
-            <p class="bio">Possui uma voz barítona profunda e estilo único.</p>
-          </div>
+                <div class="card">
+                    <img src="images/bts-jhope-formal.webp" alt="j-hope sorrindo.">
+                    <h3>j-hope</h3>
+                    <p>Rapper e dançarino</p>
+                </div>
 
-          <div class="card-membro">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Jungkook_for_Dispatch_White_Day_Special%2C_February_2019_01.jpg/800px-Jungkook_for_Dispatch_White_Day_Special%2C_February_2019_01.jpg" alt="Jungkook">
-            <h3>Jungkook</h3>
-            <p class="cargo">Jeon Jung-kook • Vocalista Principal</p>
-            <p class="bio">O membro mais novo e centro das atuações.</p>
-          </div>
+                <div class="card">
+                    <img src="images/bts-jimin-prateado.jpg" alt="Jimin com cabelo prateado.">
+                    <h3>Jimin</h3>
+                    <p>Vocalista e dançarino</p>
+                </div>
 
-        </div>
-      </section>
+                <div class="card">
+                    <img src="images/bts-membros.jpg" alt="Integrantes do BTS em um evento.">
+                    <h3>V</h3>
+                    <p>Vocalista</p>
+                </div>
 
-      <section id="conquistas">
-        <h2>3. Principais Conquistas</h2>
-        <p>Primeiro grupo de K-Pop no topo do Billboard Hot 100 e nomeado para os Grammy Awards.</p>
-      </section>
+                <div class="card">
+                    <img src="images/bts-jungkook-editorial.webp" alt="Jung Kook em um editorial de moda.">
+                    <h3>Jung Kook</h3>
+                    <p>Vocalista e dançarino</p>
+                </div>
+            </div>
+        </section>
 
-      <section id="impacto">
-        <h2>4. Impacto Social</h2>
-        <p>Em parceria com a UNICEF, criaram a campanha mundial <em>#LOVE_YOURSELF</em>.</p>
-      </section>
+        <section class="citacao">
+            <p class="subtitulo">03 / MENSAGEM E IMPACTO</p>
+            <blockquote>
+                “A música pode aproximar pessoas de diferentes culturas
+                e idiomas.”
+            </blockquote>
+        </section>
+
+        <section id="impacto" class="secao">
+            <h2>Uma comunidade <em>sem fronteiras.</em></h2>
+            <p>
+                Os fãs do BTS são conhecidos como ARMY.
+                Essa comunidade internacional compartilha o interesse
+                pela música, pelas mensagens do grupo e por suas apresentações.
+            </p>
+
+            <h3>O que torna o BTS especial?</h3>
+            <ul>
+                <li>Músicas com temas pessoais e sociais.</li>
+                <li>Coreografias e apresentações elaboradas.</li>
+                <li>Conexão com fãs de diversos países.</li>
+                <li>Participação dos integrantes na criação musical.</li>
+            </ul>
+        </section>
+
+        <aside class="curiosidade">
+            <h2>Você sabia?</h2>
+            <p>
+                BTS é a abreviação de Bangtan Sonyeondan.
+                O grupo também utiliza a expressão “Beyond the Scene”
+                em sua identidade internacional.
+            </p>
+        </aside>
     </article>
+</main>
 
-    <aside>
-      <div class="widget">
-        <h3>O Fandom: ARMY</h3>
-        <p>A comunidade global de fãs é reconhecida pela sua união e apoio constante.</p>
-      </div>
-    </aside>
-  </main>
-
-  <footer>
-    <p>&copy; 2026 - Página Informativa BTS. Licença MIT.</p>
-  </footer>
+<footer>
+    <p>BTS ✦ Música que conecta</p>
+    <p>Projeto educacional sobre o BTS · 2026</p>
+    <a href="#inicio">Voltar ao topo ↑</a>
+</footer>
 
 </body>
 </html>
