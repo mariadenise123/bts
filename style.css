@@ -1,133 +1,268 @@
 
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:ital,wght@0,500;1,500&display=swap');
+
 * {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-font-family: Arial, sans-serif;
-background: #f8f5f2;
-color: #292230;
-line-height: 1.7;
-}
-
-header {
-background: #292030;
-color: white;
-padding: 25px;
-}
-
-nav {
-display: flex;
-justify-content: space-between;
-align-items: center;
-}
-
-nav ul {
-display: flex;
-gap: 15px;
-list-style: none;
+  font-family: 'DM Sans', sans-serif;
+  background: #faf7fb;
+  color: #282130;
+  line-height: 1.7;
 }
 
 a {
-color: inherit;
-text-decoration: none;
+  color: inherit;
+  text-decoration: none;
+  transition: 0.3s;
 }
 
 a:hover {
-color: #c6b5e3;
+  color: #c6a9ef;
+}
+
+header {
+  min-height: 570px;
+  padding: 24px 7%;
+  color: white;
+  background:
+    linear-gradient(90deg, #211827ed, #21182775),
+    url("https://commons.wikimedia.org/wiki/Special:FilePath/President_Joe_Biden_and_BTS_in_the_Oval_Office_of_the_White_House,_May_31,_2022.jpg")
+    center/cover;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  border-bottom: 1px solid #ffffff55;
+  padding-bottom: 18px;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.links {
+  display: flex;
+  gap: 22px;
 }
 
 .hero {
-padding: 90px 10px;
+  padding: 100px 0;
 }
 
-h1 {
-font-size: 45px;
+.tag {
+  color: #9878c2;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.hero h1 {
+  font-size: clamp(2.8rem, 7vw, 5.5rem);
+  line-height: 1.1;
+  margin: 20px 0;
 }
 
 em {
-color: #c6b5e3;
+  font-family: 'Playfair Display', serif;
+  color: #c6a9ef;
+  font-weight: 500;
 }
 
-section {
-padding: 40px 25px;
-max-width: 1000px;
-margin: auto;
+.botao {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 12px 20px;
+  border: 1px solid white;
+}
+
+.botao:hover {
+  background: white;
+  color: #282130;
+}
+
+.secao {
+  max-width: 1050px;
+  margin: auto;
+  padding: 75px 25px;
 }
 
 h2 {
-margin-bottom: 20px;
-color: #765493;
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  line-height: 1.2;
+  margin: 18px 0;
 }
 
-section img {
-width: 100%;
-max-height: 450px;
-object-fit: cover;
-margin-top: 20px;
+.secao h2 em {
+  color: #765493;
+}
+
+.secao p {
+  margin-bottom: 16px;
+  color: #6f6875;
+}
+
+.foto-grupo {
+  display: block;
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+  margin-top: 28px;
+  border-radius: 8px;
 }
 
 .galeria {
-display: grid;
-grid-template-columns: repeat(3, 1fr);
-gap: 15px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 30px;
 }
 
-.galeria img {
-height: 250px;
-object-fit: cover;
+.card {
+  background: #eee7f4;
+  padding-bottom: 15px;
+  overflow: hidden;
 }
 
-.galeria div {
-background: #eee8f3;
-padding: 10px;
+.card img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.3s;
+}
+
+.card:hover img {
+  transform: scale(1.03);
+}
+
+.card h3,
+.card p {
+  margin: 8px 12px 0;
+}
+
+.card p,
+.credito {
+  color: #6f6875;
+  font-size: 0.85rem;
+}
+
+.credito {
+  margin-top: 18px;
+}
+
+.citacao {
+  padding: 75px 8%;
+  text-align: center;
+  background: #e9e0f2;
 }
 
 blockquote {
-padding: 20px;
-background: #e9e1f0;
-margin: 20px 0;
+  max-width: 850px;
+  margin: 25px auto 0;
+  font: clamp(1.8rem, 4vw, 3rem)/1.3 'Playfair Display', serif;
+}
+
+#impacto ul {
+  padding-left: 25px;
+  color: #6f6875;
 }
 
 aside {
-margin: 25px;
-padding: 25px;
-background: #eee8f3;
+  max-width: 1000px;
+  margin: 0 auto 75px;
+  padding: 28px;
+  background: #eee7f4;
+  border-left: 4px solid #765493;
+}
+
+aside h2 {
+  font-size: 1.8rem;
+}
+
+aside p {
+  margin-bottom: 12px;
+}
+
+aside a {
+  color: #765493;
+  text-decoration: underline;
 }
 
 footer {
-background: #292030;
-color: white;
-text-align: center;
-padding: 25px;
+  background: #211827;
+  color: white;
+  text-align: center;
+  padding: 35px 20px;
 }
 
-@media (max-width: 600px) {
-nav {
-flex-direction: column;
-gap: 15px;
+footer p {
+  margin: 8px;
+  color: #d4cbdc;
 }
 
-nav ul {
-flex-wrap: wrap;
-justify-content: center;
+footer > a:last-child {
+  display: inline-block;
+  margin-top: 10px;
 }
 
-h1 {
-font-size: 35px;
+@media (max-width: 650px) {
+  header {
+    padding: 20px;
+    background-position: center;
+  }
+
+  nav {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .links {
+    flex-wrap: wrap;
+    gap: 18px;
+    font-size: 0.9rem;
+  }
+
+  .hero {
+    padding: 85px 0;
+  }
+
+  .secao {
+    padding: 55px 20px;
+  }
+
+  .galeria {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .card img {
+    height: 230px;
+  }
+
+  aside {
+    margin: 0 20px 55px;
+  }
 }
 
-.galeria {
-grid-template-columns: repeat(2, 1fr);
-}
+@media (max-width: 380px) {
+  .galeria {
+    grid-template-columns: 1fr;
+  }
 
-.galeria img {
-height: 200px;
-}
+  .card img {
+    height: 300px;
+  }
 }
